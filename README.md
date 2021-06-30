@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+ 
 
-You can use the [editor on GitHub](https://github.com/walkerever/walkerever.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## QIC
+[qic](https://walkerever.github.io/qic)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+JSON/YAML/XML comand line query tool with interactive mode.
 
-### Markdown
+By design, it tries to keep simple but powerful.  You can chain multiple QIC call together which is much easier than composing very complicated queries in a single expression.  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+----
 
-```markdown
-Syntax highlighted code block
+## XTABLE
+[xtable](https://walkerever.github.io/xtable)
+print console tables. xtable serves as both a class and a command line tool.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+----
 
-1. Numbered
-2. List
+## py-DBX
+[py-dbx](https://walkerever.github.io/py-dbx)
+make JDBC calls from command line. It maintains server connection across calls and user doesn't need to connect each time.  One purpose of this tool is to make JDBC result directly open to unix utitlies.  
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/walkerever/walkerever.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+it also supports plugin. A plugin is a set of queries, you can name them then DBX will run it when you name the alias.
