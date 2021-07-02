@@ -21,3 +21,8 @@ print console tables. xtable serves as both a class and a command line tool.
 make JDBC calls from command line. It maintains server connection across calls and user doesn't need to connect each time.  One purpose of this tool is to make JDBC result directly open to unix utitlies.  
 
 it also supports plugin. A plugin is a set of queries, you can name them then DBX will run it when you name the alias.
+
+## json-to-html
+[json2html](https://walkerever.github.io/json2html)
+convert JSON to HTML.
+support collapse/expand, rows sampling.
