@@ -1,4 +1,9 @@
- 
+some open source projects I owned, 
+
+## csv-join
+join CSV files in SQL. by default use sqlite3 in memory. can be configured to use any RDBMS such as postgresql, mysql, db2, etc.
+[TBD]
+
 
 ## QIC
 [qic](https://walkerever.github.io/qic)
