@@ -1,4 +1,4 @@
-some open source Python projects I owned.  
+some open source Python projects I owned.  all available through pip.
 
 ## csv-join
 join CSV files in SQL. by default use sqlite3 in memory. can be configured to use any RDBMS such as postgresql, mysql, db2, etc.
@@ -29,6 +29,10 @@ it also supports plugin. A plugin is a set of queries, you can name them then DB
 
 ----
 
+## novels
+download Chinese online novels:)  
+
+----
 ## json-to-html
 [json2html](https://walkerever.github.io/json2html)
 convert JSON to HTML.
