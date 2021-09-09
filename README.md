@@ -30,7 +30,7 @@ it also supports plugin. A plugin is a set of queries, you can name them then DB
 ----
 
 ## novels
-download Chinese online novels:)  
+a crawler which downloads Chinese online novels:)  
 
 ----
 ## json-to-html
