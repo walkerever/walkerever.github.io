@@ -2,7 +2,8 @@ some open source Python projects I owned.  all available through pip.
 
 ## csv-join
 join CSV files in SQL. by default use sqlite3 in memory. can be configured to use any RDBMS such as postgresql, mysql, db2, etc.
-[TBD]
+
+[document coming...]
 
 
 ## QIC
@@ -31,6 +32,9 @@ it also supports plugin. A plugin is a set of queries, you can name them then DB
 
 ## novels
 a crawler which downloads Chinese online novels:)  
+
+[document coming...]
+
 
 ----
 ## json-to-html
