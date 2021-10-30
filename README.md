@@ -22,7 +22,7 @@ By design, it tries to keep simple but powerful.  You can chain multiple QIC cal
 ## XTABLE
 [xtable](https://walkerever.github.io/xtable)
 print console tables. xtable serves as both a class and a command line tool.
-
+![xtable show](/assets/images/xtable.gif)
 
 ----
 
