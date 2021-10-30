@@ -1,4 +1,4 @@
-Here's the documents for some toy projects I made.    -- Yonghang
+a few python open source projects by Yonghang.
 
 ----
 
