@@ -34,6 +34,13 @@ it also supports plugin. A plugin is a set of queries, you can name them then DB
 ![dbx show](/assets/images/dbx.gif)
 ----
 
+----
+
+## lt-expect
+make expect easily available to comman line
+![ltexpect show](/assets/images/ltexpect.gif)
+
+
 ## novels
 a crawler which downloads Chinese online novels:)  
 
