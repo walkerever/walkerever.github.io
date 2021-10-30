@@ -1,4 +1,6 @@
-some open source Python projects I owned.  all available through pip.
+Here's the documents for some toy projects I made. 
+
+----
 
 ## csv-join
 join CSV files in SQL. by default use sqlite3 in memory. can be configured to use any RDBMS such as postgresql, mysql, db2, etc.
