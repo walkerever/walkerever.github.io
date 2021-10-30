@@ -11,6 +11,8 @@ join CSV files in SQL. by default use sqlite3 in memory. can be configured to us
 
 JSON/YAML/XML comand line query tool with interactive mode.
 
+![qic show](/assets/images/qic.show.gif)
+
 By design, it tries to keep simple but powerful.  You can chain multiple QIC call together which is much easier than composing very complicated queries in a single expression.  
 
 ----
