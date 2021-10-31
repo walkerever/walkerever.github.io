@@ -36,7 +36,7 @@ it also supports plugin. A plugin is a set of queries, you can name them then DB
 
 ----
 
-## lt-expect
+## ltexpect
 make expect easily available to comman line
 ![ltexpect show](/assets/images/ltexpect.gif)
 
