@@ -1,6 +1,11 @@
 a few python open source tools developed by Yonghang.
 
 ----
+## mysql-replication-display
+like pt-slave-find but do more.  allow detection of stopped replicas.
+![mysql-replication-display](/assets/images/mysql_repl_display.gif)
+
+
 ## mysql-xml-formatter
 I don't like the table output from "mysql".  Other than rewriting a full client, applying a formatter to the "--xml" output make it much nicer. 
 
