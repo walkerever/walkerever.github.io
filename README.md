@@ -2,9 +2,11 @@ a few python open source tools developed by Yonghang.
 
 ----
 ## mysql-xml-formatter
-I don't like the table output from "mysql".  Other than rewriting a full client, applying a formatter to the "--xml" output make it much nicer. 
-a.  wrap and cutwrap options.
-b.  column filter with -I/-E.   -E to exlude columns and -I to include columns. 
+I don't like the table output from "mysql".  Other than rewriting a full client, applying a formatter to the "--xml" output make it much nicer. \
+
+a.  wrap and cutwrap options. \
+b.  column filter with -I/-E.   -E to exlude columns and -I to include columns.  \
+
 ![mysql-xml-formatter show](/assets/images/mysql-xml-formatter.gif)
 
 
