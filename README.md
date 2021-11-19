@@ -1,4 +1,4 @@
-a few python open source projects by Yonghang.
+a few python open source tools developed by Yonghang.
 
 ----
 ## mysql-xml-formatter
