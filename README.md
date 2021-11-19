@@ -1,4 +1,4 @@
-a few python open source tools developed by Yonghang.
+a few written in my spare time. 
 
 ----
 ## mysql-replication-display
