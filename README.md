@@ -1,6 +1,10 @@
 a few python open source projects by Yonghang.
 
 ----
+## mysql-xml-formatter
+dump table data in better format with flexiblity.  Turns "mysql" to be more user friendly as a query tool in command line.
+![mysql-xml-formatter show](/assets/images/mysql-xml-formatter.gif)
+
 
 ## csv-join
 join CSV files in SQL. by default use sqlite3 in memory. can be configured to use any RDBMS such as postgresql, mysql, db2, etc.
