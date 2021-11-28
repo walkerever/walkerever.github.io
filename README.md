@@ -11,6 +11,8 @@ b.  column filter with -I/-E.   -E to exlude columns and -I to include columns.
 ![mysql-xml-formatter show](/assets/images/mysql-xml-formatter.gif)
 
 
+
+
 ## mysql-replication-display
 like pt-slave-find but do more.  allow detection of stopped replicas.
 ![mysql-replication-display](/assets/images/mysql_repl_display.gif)
