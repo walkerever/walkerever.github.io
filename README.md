@@ -1,18 +1,19 @@
 a few written in my spare time. 
 
 ----
-## mysql-replication-display
-like pt-slave-find but do more.  allow detection of stopped replicas.
-![mysql-replication-display](/assets/images/mysql_repl_display.gif)
-
 
 ## mysql-xml-formatter
-I don't like the table output from "mysql".  Other than rewriting a full client, applying a formatter to the "--xml" output make it much nicer. 
+applying a formatter to the "mysql --xml" output, make it eaiser to read and operate in command line. 
 
 a.  wrap and cutwrap options. \
 b.  column filter with -I/-E.   -E to exlude columns and -I to include columns.  
 
 ![mysql-xml-formatter show](/assets/images/mysql-xml-formatter.gif)
+
+
+## mysql-replication-display
+like pt-slave-find but do more.  allow detection of stopped replicas.
+![mysql-replication-display](/assets/images/mysql_repl_display.gif)
 
 
 ## csv-join
