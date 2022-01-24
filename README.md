@@ -2,22 +2,6 @@ a few written in my spare time.
 
 ----
 
-## mysql-xml-formatter
-applying a formatter to the "mysql --xml" output, make it eaiser to read and operate in command line. 
-
-a.  wrap and cutwrap options. \
-b.  column filter with -I/-E.   -E to exlude columns and -I to include columns.  
-
-![mysql-xml-formatter show](/assets/images/mysql-xml-formatter.gif)
-
-
-
-
-## mysql-replication-display
-like pt-slave-find but do more.  allow detection of stopped replicas.
-![mysql-replication-display](/assets/images/mysql_repl_display.gif)
-
-
 ## csv-join
 join CSV files in SQL. by default use sqlite3 in memory. can be configured to use any RDBMS such as postgresql, mysql, db2, etc.
 
@@ -61,6 +45,24 @@ make expect easily available to comman line
 a crawler which downloads Chinese online novels:)  
 
 [document coming...]
+
+-----
+
+## mysql-xml-formatter
+applying a formatter to the "mysql --xml" output, make it eaiser to read and operate in command line. 
+
+a.  wrap and cutwrap options. \
+b.  column filter with -I/-E.   -E to exlude columns and -I to include columns.  
+
+![mysql-xml-formatter show](/assets/images/mysql-xml-formatter.gif)
+
+
+-----
+
+
+## mysql-replication-display
+like pt-slave-find but do more.  allow detection of stopped replicas.
+![mysql-replication-display](/assets/images/mysql_repl_display.gif)
 
 
 ----
