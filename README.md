@@ -7,11 +7,7 @@ generic database client.
 ![xdb show](/assets/images/xdb.gif)
 ![xdb show](/assets/images/xdb2.gif)
 
-## csv-join
-join CSV files in SQL. by default use sqlite3 in memory. can be configured to use any RDBMS such as postgresql, mysql, db2, etc.
-
-![csv-join show](/assets/images/csvjoin.gif)
-
+----
 
 ## QIC
 [qic](https://walkerever.github.io/qic)
@@ -24,10 +20,34 @@ By design, it tries to keep simple but powerful.  You can chain multiple QIC cal
 
 ----
 
+## mysql-xml-formatter
+applying a formatter to the "mysql --xml" output, make it eaiser to read and operate in command line. 
+
+a.  wrap and cutwrap options. \
+b.  column filter with -I/-E.   -E to exlude columns and -I to include columns.  
+
+![mysql-xml-formatter show](/assets/images/mysql-xml-formatter.gif)
+
+
+-----
+
+
+## mysql-replication-display
+like pt-slave-find but do more.  allow detection of stopped replicas.
+![mysql-replication-display](/assets/images/mysql_repl_display.gif)
+-----
+
+
 ## XTABLE
 [xtable](https://walkerever.github.io/xtable)
 print console tables. xtable serves as both a class and a command line tool.
 ![xtable show](/assets/images/xtable.gif)
+
+----
+## csv-join
+join CSV files in SQL. by default use sqlite3 in memory. can be configured to use any RDBMS such as postgresql, mysql, db2, etc.
+
+![csv-join show](/assets/images/csvjoin.gif)
 
 ----
 
@@ -50,24 +70,6 @@ make expect easily available to comman line
 a crawler which downloads Chinese online novels:)  
 
 [document coming...]
-
------
-
-## mysql-xml-formatter
-applying a formatter to the "mysql --xml" output, make it eaiser to read and operate in command line. 
-
-a.  wrap and cutwrap options. \
-b.  column filter with -I/-E.   -E to exlude columns and -I to include columns.  
-
-![mysql-xml-formatter show](/assets/images/mysql-xml-formatter.gif)
-
-
------
-
-
-## mysql-replication-display
-like pt-slave-find but do more.  allow detection of stopped replicas.
-![mysql-replication-display](/assets/images/mysql_repl_display.gif)
 
 
 ----
