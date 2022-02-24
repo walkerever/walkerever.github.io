@@ -5,7 +5,7 @@ a few command line tools I wrote in the past and still use them almost daily.
 ## py-xdb
 generic database client. 
 ![xdb show](/assets/images/xdb.gif)
-
+![xdb show](/assets/images/xdb2.gif)
 
 ## csv-join
 join CSV files in SQL. by default use sqlite3 in memory. can be configured to use any RDBMS such as postgresql, mysql, db2, etc.
