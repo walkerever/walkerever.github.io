@@ -1,4 +1,4 @@
-Here's a brief of a few command line tools I wrote in the past and still use them almost daily. 
+a few command line tools I wrote in the past and still use them almost daily. 
 
 ----
 
