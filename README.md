@@ -1,4 +1,4 @@
-a few command line tools written in the past.
+a few command line tools to share. 
 
 ----
 
