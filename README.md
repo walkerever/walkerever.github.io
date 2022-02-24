@@ -4,7 +4,7 @@ a few command line tools to share.
 
 ## py-xdb
 generic database client in python.  Borrow the ability to talk to databases with SQLAlchemy.  
-in the past I wrote py-dbx which is a JDBC client -- in rather long time in my working environment as DBA in big firms, it's extremely hard to introduced new software packages into the database servers, so was forced to use very basic perl/python to deal with everything -- trust me, it's very hard.  Even an robust CSV parser is not easy, actually rather hard to allow all kinds of special cases.
+in the past I wrote py-dbx which is a JDBC client -- it's intially built with perl and embeded Java from DBMS installations -- for rather long time in my working environment as DBA in big firms, it's extremely hard to introduced new software packages into the database servers, so was forced to use very basic perl/python to deal with everything -- trust me, it's very hard.  Even an robust CSV parser is not easy, actually rather hard to allow all kinds of special cases.
 
 ![xdb show](/assets/images/xdb.gif)
 ![xdb show](/assets/images/xdb2.gif)
