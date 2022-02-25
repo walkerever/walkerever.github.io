@@ -6,6 +6,12 @@ a few command line tools to share.
 generic database client in python.  Borrow the ability to talk to databases with SQLAlchemy.  
 in the past I wrote py-dbx which is a JDBC client -- it's intially built with perl and embeded Java from DBMS installations -- for rather long time in my working environment as DBA in big financial firms, it's extremely hard to introduce new software packages into the database servers, so was forced to use very basic perl/python to deal with everything -- trust me, it's very hard.  Even an robust CSV parser is not easy, actually rather hard to allow all kinds of special cases.
 
+note, 
+1. you need to install DBMS python server separately. eg. for postgres, it could be psycopg2, for mysql, it could be pymysql, etc.  SQLAlchemy handles this part.
+2. it integrates the funcitons of csv-join.  To use default in memory sqlite3 database or any others specified by -d (sqlalchemy connection string, or if single word, treated as sqlite3 database file to be created/used.)
+3. I did have a lite version without panda, but since panda is so popular so I still make it the public version.  it's only used for the querying from CSV files.  in some environment where there's no good panda distro, such as cygwin, I chose to install py-xdb with --no-deps. 
+4. py-xdb has dependency on xtable. xtable has a command line interface as well and it's very useful. you can find a simple demo on this page as well.
+
 ![xdb show](/assets/images/xdb.gif)
 ![xdb show](/assets/images/xdb2.gif)
 
