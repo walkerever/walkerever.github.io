@@ -52,14 +52,16 @@ print console tables. xtable serves as both a class and a command line tool.
 ![xtable show](/assets/images/xtable.gif)
 
 ----
-## csv-join
+## csv-join 
+the function has been integrated into py-xdb.
 join CSV files in SQL. by default use sqlite3 in memory. can be configured to use any RDBMS such as postgresql, mysql, db2, etc.
 
 ![csv-join show](/assets/images/csvjoin.gif)
 
 ----
 
-## py-DBX
+## py-DBX 
+mostly replace by py-xdb. only this is JDBC based than python native driver. this is the python version of poor DBA's database box when I was living with a environment I cannot install perl DBI or python drivers. the only thing can be used at that time is JAVA/JDBC or command line interfaces.
 [py-dbx](https://walkerever.github.io/py-dbx)
 make JDBC calls from command line. It maintains server connection across calls and user doesn't need to connect each time.  One purpose of this tool is to make JDBC result directly open to unix utitlies.  
 
