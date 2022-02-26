@@ -1,5 +1,19 @@
 a few command line tools to share. 
 
+I'm more used to work with CLI than UI. that's why for any product/platform introduced I always research the CLI and API availability which is the most automation friendly.
+
+The idea behind these tools is, I used to work with multiple DBMS systems such as db2, sybase and recently more of mysql, postgresql  -- for CLI part, I want better display of table data.  and since for automation I'm dealing with more and more REST APIs and many of them are naturely "table" data like JSON list of list or list of dicts.   So I started to make some console libraries. firstly in bash, then another version in perl, until recently moved to python and opensourced as xtable.   Then I added the support to JSON/YAML/CSV and even XML and Markdown. 
+
+The tools like py-xdb is convinient for me.  technically it's more of a integration project with SQLAlchemy database interface, xtable as console interface, etc. 
+
+btw, py-xdb allow users to define their own plugins  --- I used to keep all kind of query to system tables then when something happens I can simple copy/past or run with minor modifications --- now, just add them into the default .dbx.dbs.json config file and just use the alias.   I put a simple example as "\d" as example.
+
+Another idea behind py-xdb is that I do love the db2 command line interface.  DB2 does have interactive mode within DB2 promot, but DB2 guys are more used to run each query as a separeate *nix command and always feel free to use all *nix utilities.  This is partly why I like the CSV output -- easy to feed into awk.  I implemented a server process which keep the shared connection to avoid wasting from too many short connections in py-dbx which is python+jdbc version py-xdb.  I may migrate this to py-xdb in future, only for now it has rather lower priority. 
+
+When situation become complicated for awk or sed, JSON output is useful.  Like the idea behind powershell that treat input as a object.  QIC is created for this purpose. For many functions it can be treated as "yet another jq" but the basic idea is not the same at all.  QIC allows user to use python code to do more -- you can import modules, defining functions, processing the data in a way you like, say, you have all the ability Python gives you and the input is available to you as a single internal variable "_". 
+
+
+
 ----
 
 ## py-xdb
@@ -54,6 +68,7 @@ print console tables. xtable serves as both a class and a command line tool.
 ----
 ## csv-join 
 the function has been integrated into py-xdb.
+
 join CSV files in SQL. by default use sqlite3 in memory. can be configured to use any RDBMS such as postgresql, mysql, db2, etc.
 
 ![csv-join show](/assets/images/csvjoin.gif)
@@ -61,7 +76,10 @@ join CSV files in SQL. by default use sqlite3 in memory. can be configured to us
 ----
 
 ## py-DBX 
-mostly replace by py-xdb. only this is JDBC based than python native driver. this is the python version of poor DBA's database box when I was living with a environment I cannot install perl DBI or python drivers. the only thing can be used at that time is JAVA/JDBC or command line interfaces.
+mostly replaced by py-xdb. only this is JDBC based than python native driver. 
+
+this is the python version of poor DBA's database box when I was living with a environment I cannot install perl DBI or python drivers. the only thing can be used at that time is JAVA/JDBC or command line interfaces.
+
 [py-dbx](https://walkerever.github.io/py-dbx)
 make JDBC calls from command line. It maintains server connection across calls and user doesn't need to connect each time.  One purpose of this tool is to make JDBC result directly open to unix utitlies.  
 
