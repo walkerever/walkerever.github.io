@@ -6,6 +6,8 @@ The idea behind these tools is, I used to work with multiple DBMS systems such a
 
 The tools like py-xdb is convinient for me.  technically it's more of a integration project with SQLAlchemy database interface, xtable as console interface, etc. 
 
+next plan is to integrate some nosql such as mongodb. 
+
 btw, py-xdb allow users to define their own plugins  --- I used to keep all kind of queries then when something happens I can simple copy/paste  --- now, just add them into the default .dbx.dbs.json config file and just use the alias.   I put a simple example as "\d" as example.  Bad part of this, be careful, after some months, or longer, you may get lost and cannot remind which system tables to query(they are there, there, but what's the names???) when asked by somebody who's not using the same environment -- hmm, your interviewer? he may think you don't really know them!   I found this is not rare:)  and, after a few years not working as a DBA, I even found myself hard to concisely describe some concepts and from time to time may mix isolation levels of multiple DBMS's --- OK, I just want to shout, even DBA sense, and many skills are really portable, but definitely not for interviews:)  
 
 Another idea behind py-xdb is that I do love the db2 command line interface.  DB2 does have interactive mode within DB2 promot, but DB2 guys are more used to run each query as a separeate *nix command and always feel free to use all *nix utilities.  This is partly why I like the CSV output -- easy to feed into awk.  I implemented a server process which keep the shared connection to avoid wasting from too many short connections in py-dbx which is python+jdbc version py-xdb.  I may migrate this to py-xdb in future, only for now it has rather lower priority. 
