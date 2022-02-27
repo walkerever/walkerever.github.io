@@ -26,6 +26,7 @@ note,
 2. it integrates the funcitons of csv-join.  To use default in memory sqlite3 database or any others specified by -d (sqlalchemy connection string, or if single word, treated as sqlite3 database file to be created/used.)
 3. I did have a lite version without panda, but since panda is so popular so I still make it the public version.  it's only used for the querying from CSV files.  in some environment where there's no good panda distro, such as cygwin, I chose to install py-xdb with --no-deps. 
 4. py-xdb has dependency on xtable. xtable has a command line interface as well and it's very useful. you can find a simple demo on this page as well.
+5. when exported as JSON/YAML, in case JSON/YAML module cannot handle the types well, try force_string_typed. 
 
 ![xdb show](/assets/images/xdb.gif)
 ![xdb show](/assets/images/xdb2.gif)
