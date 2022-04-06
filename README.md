@@ -2,22 +2,14 @@ a few command line tools to share.
 
 I'm more used to work with CLI than UI. that's why for any product/platform introduced I always research the CLI and API availability which is the most automation friendly.
 
-The idea behind these tools is, I used to work with multiple DBMS systems such as db2, sybase and recently more of mysql, postgresql  -- for CLI part, I want better display of table data.  and since for automation I'm dealing with more and more REST APIs and many of them are naturely "table" data like JSON list of list or list of dicts.   So I started to make some console libraries. firstly in bash, then another version in perl, until recently moved to python and opensourced as xtable.   Then I added the support to JSON/YAML/CSV and even XML and Markdown. 
-
-The tools like py-xdb is convinient for me.  technically it's more of a integration project with SQLAlchemy database interface, xtable as console interface, etc. 
-
-next plan is to integrate some nosql such as mongodb. 
-
-btw, py-xdb allow users to define their own plugins  --- I used to keep all kind of queries then when something happens I can simple copy/paste  --- now, just add them into the default .dbx.dbs.json config file and just use the alias.   I put a simple example as "\d" as example.  Bad part of this, be careful, after some months, or longer, you may get lost and cannot remind which system tables to query(they are there, there, but what's the names???) when asked by somebody who's not using the same environment -- hmm, your interviewer? he may think you don't really know them!   I found this is not rare:)  and, after a few years not working as a DBA, I even found myself hard to concisely describe some concepts and from time to time may mix isolation levels of multiple DBMS's --- OK, I just want to shout, even DBA sense, and many skills are really portable, but definitely not for interviews:)  
-
-Another idea behind py-xdb is that I do love the db2 command line interface.  DB2 does have interactive mode within DB2 promot, but DB2 guys are more used to run each query as a separeate *nix command and always feel free to use all *nix utilities.  This is partly why I like the CSV output -- easy to feed into awk.  I implemented a server process which keep the shared connection to avoid wasting from too many short connections in py-dbx which is python+jdbc version py-xdb.  I may migrate this to py-xdb in future, only for now it has rather lower priority. 
-
-When situation become complicated for awk or sed, JSON output is useful.  Like the idea behind powershell that treat input as a object.  QIC is created for this purpose. For many functions it can be treated as "yet another jq" but the basic idea is not the same at all.  QIC allows user to use python code to do more -- you can import modules, defining functions, processing the data in a way you like, say, you have all the ability Python gives you and the input is available to you as a single internal variable "_". 
-
+...
 
 ----
 
 ## py-xdb
+
+note on Mar 2022, now support column filters.  eg. for a very wide table, we can run something like, xdb -d dbname -q "select * from widetable" --filter "patter1" --filter "pattern2".   Patterns here are RE expression.
+
 generic database client in python.  Borrow the ability to talk to databases with SQLAlchemy.  
 in the past I wrote py-dbx which is a JDBC client -- it's intially built with perl and embeded Java from DBMS installations -- for rather long time in my working environment as DBA in big financial firms, it's extremely hard to introduce new software packages into the database servers, so was forced to use very basic perl/python to deal with everything -- trust me, it's very hard.  Even an robust CSV parser is not easy, actually rather hard to allow all kinds of special cases.
 
