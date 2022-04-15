@@ -8,7 +8,8 @@ I'm more used to work with CLI than UI. that's why for any product/platform intr
 
 ## py-xdb
 
-note on Mar 2022, now support column filters.  eg. for a very wide table, we can run something like, xdb -d dbname -q "select * from widetable" --filter "patter1" --filter "pattern2".   Patterns here are RE expression.
+note on Mar 2022, now support column filters and negative filters.  This is used to filter columns with regular expression, helpful when researching into wide tables. 
+---
 
 generic database client in python.  Borrow the ability to talk to databases with SQLAlchemy.  
 in the past I wrote py-dbx which is a JDBC client -- it's intially built with perl and embeded Java from DBMS installations -- for rather long time in my working environment as DBA in big financial firms, it's extremely hard to introduce new software packages into the database servers, so was forced to use very basic perl/python to deal with everything -- trust me, it's very hard.  Even an robust CSV parser is not easy, actually rather hard to allow all kinds of special cases.
