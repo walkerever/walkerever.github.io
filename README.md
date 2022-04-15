@@ -8,7 +8,8 @@ I'm more used to work with CLI than UI. that's why for any product/platform intr
 
 ## py-xdb
 
-note on Mar 2022, now support column filters and negative filters.  This is used to filter columns with regular expression, helpful when researching into wide tables. 
+
+note on Mar 2022, now support column filters and negative filters.  This is used to filter columns with regular expression, helpful when researching into wide tables.  
 ---
 
 generic database client in python.  Borrow the ability to talk to databases with SQLAlchemy.  
